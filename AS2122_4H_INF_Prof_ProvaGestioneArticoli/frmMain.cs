@@ -32,10 +32,11 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             if (f.Status == DialogResult.OK)
             {
                 // aggiungi l'articolo all'elenco di articoli
-                articoli.Add(new Articolo() {Codice
+                frmArticolo frmArticolo = new();
+
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
-
+                articoli.Add(frmArticolo.Articolo);
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
@@ -64,6 +65,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
+
         }
     }
 }

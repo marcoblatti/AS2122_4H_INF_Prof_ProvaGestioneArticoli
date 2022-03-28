@@ -19,7 +19,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             InitializeComponent();
 
             // TODO: (4) creazione lista articoli
-            List<string> articoli= new List<string>();
+            List<Articolo> articoli = new List<Articolo>();
             // ...
         }
 
@@ -32,6 +32,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             if (f.Status == DialogResult.OK)
             {
                 // aggiungi l'articolo all'elenco di articoli
+                articoli.Add(new Articolo() {Codice
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
 
@@ -47,6 +48,9 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
                     // ... lstElenco.Items.Add(a.Visualizzati()); 
+                    lstElenco.DataSource = null;
+                    lstElenco.DataSource = articoli;
+                    lstElenco.DisplayMember = "Visualizzati";
                     break;
             }
         }

@@ -44,7 +44,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             double n;
             if (!Double.TryParse(txtPrezzo.Text, out n))
             {
-                MessageBox.Show("Devi inserire un valore numerico per il prezzo.");
+                MessageBox.Show("inserisci un numero per visualizzare il prezzo.");
                 return;
             }
             descrizione = txtDescrizione.Text;

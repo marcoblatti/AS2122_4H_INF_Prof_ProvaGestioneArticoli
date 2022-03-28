@@ -19,6 +19,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             InitializeComponent();
 
             // TODO: (4) creazione lista articoli
+            List<string> articoli= new List<string>();
             // ...
         }
 
